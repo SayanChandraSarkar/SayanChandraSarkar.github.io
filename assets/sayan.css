@@ -1202,9 +1202,10 @@ html {
     cursor: copy;
   }
 
-  .not-allowed {
+  .not-allowed a {
     cursor: not-allowed;
   }
+
   #copy1 {
     position: fixed;
     top: -10px;

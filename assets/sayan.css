@@ -640,13 +640,13 @@ html {
     color: #fff;
     transition: 0.4s ease-in-out;
   }
-  body:not(.active) .qsn_ans{
+  body:not(.active) .qsn_ans {
     border-top: 4px dotted #000;
     border-left: 4px dotted #000;
     border-right: 4px dotted #000;
     border-bottom: 4px dotted #000;
   }
-  body.active .qsn_ans{
+  body.active .qsn_ans {
     border-top: 4px dotted #fff;
     border-left: 4px dotted #fff;
     border-right: 4px dotted #fff;
@@ -669,11 +669,10 @@ html {
     fill: #161616;
     transition: 0.4s ease-in-out;
   }
-  body.active .child-menu{
+  body.active .child-menu {
     background-color: #161616;
-    
   }
-  body.active .child-menu a{
+  body.active .child-menu a {
     color: #fff;
   }
 
@@ -688,7 +687,6 @@ html {
     margin-bottom: 10px;
     cursor: pointer;
   }
-  .
 }
 @media screen and (min-width: 992px) {
   header {
@@ -1201,6 +1199,11 @@ html {
   .copy {
     position: relative;
     font-size: 1.1rem;
+    cursor: copy;
+  }
+
+  .not-allowed {
+    cursor: not-allowed;
   }
   #copy1 {
     position: fixed;

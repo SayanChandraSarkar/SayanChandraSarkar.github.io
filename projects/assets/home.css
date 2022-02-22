@@ -1,0 +1,49 @@
+
+
+/*-------------------------------------------------------------------------
+
+  during production, compile and minify all stylesheet as a single css file
+
+
+  line gap: 
+  1 line   
+  5 lines 
+  10 lines
+
+------------------------------------------------------------------------*/
+
+@import url("induvidual/flickity.css");
+
+@import url("induvidual/button.css");
+@import url("induvidual/components.css");
+@import url("induvidual/dimension.css");
+@import url("induvidual/animation.css");
+@import url("induvidual/base.css");
+@import url("ix.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Robot:wght@400;500;700&display=swap');
+
+
+
+
+
+
+
+/*---------------main body--------------*/
+body,html{
+  width:100%;
+  margin:0;padding:0;
+  font-family:var(--robo);
+  font-size:16px;
+  background:var(--white);
+  color:var(--grey3);
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-wrap:break-word;
+
+}
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="../assets/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+</head>
+<body>
+
+<style>
+#hide1
+{
+	display: none;
+}
+</style>
+	<section>
+		<!-- <div class="w100 h100v flex">
+			<div class="w100 blueb">
+				<div class="login w320p white h420 l50 pr t100">
+			      <img src="image/sayan.jpg" class="avatar ic100 br50 lc pa tty-50">
+				</div>
+			</div>
+			
+		</div> -->
+		<div class="flex w100 h100v pf">
+			<div class="grayd w60">
+				<img src="../image/Startup life-pana.png" class="w90 h100v ml20 mt20">
+			</div>
+			<div class="blueb w40 ic">
+				<div class="loginbox white w320p h420">
+					<img src="../image/sayan.jpg" class="avatar ic100 br50 tty-50 l35 pr">
+					<div class="tty-40 p10">
+						<div class="welome">
+							<div class="ic f16">Welcome Back</div>
+							<div class="ic cgray7 mt5">Login to continue</div>
+						</div>
+						<div class="p20_15">
+							<div class="p15 br10 bslg2 flex">
+								<div class="ix-email ic mr10 blued f14"></div>
+								<input type="email"name="email" placeholder="Enter email" class="f09 w100 bor0 bolder">
+							</div>
+						</div>
+						<div class="p10_15">
+							<div class="p15 bslg2 br10 flex">
+								<div class="ix-lock ic f14 mr10 blued"></div>
+								<input type="password"name="password" placeholder="Enter password" class="f09 bor0 bolder" id="myinput">
+								<div class="eye flex" onclick="myFunction()">
+									<i id="hide1" class="fa fa-eye"></i>
+									<i id="hide2" class="fa fa-eye-slash"></i>
+								</div>
+							</div>
+						</div>
+							
+						<div class="tr p10 blued f08">Forget Password?</div>
+
+						<div class="ic">
+							<button class="p12_40 w75 bor0 theme cwhite f11">Login</button>
+						</div>
+
+						<div class="flex f08 ic p15">
+							<div>Don't have account?</div>
+							<div class="ml5 blued">Create an account</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function myFunction(){
+			var x = document.getElementById("myinput"); 
+			var y = document.getElementById("hide1"); 
+			var z = document.getElementById("hide2"); 
+
+			if(x.type === 'password'){
+				x.type = "text";
+				y.style.display = "block";
+				z.style.display = "none"
+			}
+
+			else{
+				x.type = "password";
+				y.style.display = "none";
+				z.style.display = "block"
+			}
+		}
+	</script>
+</body>
+</html>

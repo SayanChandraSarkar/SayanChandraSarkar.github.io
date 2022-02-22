@@ -1,0 +1,29 @@
+
+
+@keyframes rotate360 {
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@keyframes dash {  
+ 0% {stroke-dasharray: 1, 200;stroke-dashoffset: 0;}
+ 50% {stroke-dasharray: 89, 200;stroke-dashoffset: -35;}
+ 100% {stroke-dasharray: 89, 200;stroke-dashoffset: -124;}
+}
+
+
+
+.load_anim{animation:load_anim 1.6s infinite linear;}
+@keyframes load_anim {
+  0%,100% {opacity:1}
+  50% {opacity:0.3}
+}
+
+
+
+
+
+
+
+
+
+@keyframes toasttimer{ 0%{width:0;} 100%{width:100%;} } 

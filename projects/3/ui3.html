@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ui3.css">
+	<link rel="stylesheet" type="text/css" href="ix.css">
+	<title></title>
+</head>
+<body>
+	<div class="mask"></div>
+
+	<footer>
+		<div class="icons">
+            <img src="logo-transparent.png">
+         </div>	
+
+         <div class="first">
+         	<div class="entr">Enter OTP sent to +91 80111658412</div>
+         	<div class="ix-edit"></div>
+         	<div class="circle">
+         		<svg height="40" width="40">
+		    		<circle class="path-bg" stroke-width="3px" stroke="#bbb" fill="none" r="13" cx="20" cy="20"></circle>
+
+		    		<circle id="path" class="path" stroke-width="3px" stroke="#ff5500" fill="none" r="13" cx="20" cy="20"></circle>
+		  		</svg>
+		  		<div class="num">23s</div>
+         	</div>
+         </div>
+
+         <div class="second">
+         	<input type="number" id="otp1" maxlength="1" onkeyup="clickevent(this,1)">
+         	<input type="number" id="otp2" maxlength="1" onkeyup="clickevent(this,2)">
+         	<input type="number" id="otp3" maxlength="1" onkeyup="clickevent(this,3)">
+         	<input type="number" id="otp4" maxlength="1" onkeyup="clickevent(this,4)">
+         	<input type="number" id="otp5" maxlength="1" onkeyup="clickevent(this,5)">
+         	<input type="number" id="otp6" maxlength="1" onkeyup="clickevent(this,6)">
+         </div>
+
+         <div class="third">
+         	<button>Verify OTP</button>
+         </div>
+	</footer>
+
+
+	<script>
+		function clickevent(first,serial){
+			let c=false;
+			document.getElementById(`otp${serial}`).value =this.event.target.value.slice(-1);
+
+
+			if(this.event.which == 8){
+				if(serial>1){
+					serial--;
+					c=true;
+				}
+
+			}
+			else{
+				if(serial<6){
+					serial++;
+					c=true;
+				}
+			}
+
+			document.getElementById(`otp${serial}`).focus();
+			if(c){
+				document.getElementById(`otp${serial}`).value="";
+			}
+
+		}
+	</script>
+</body>
+</html>

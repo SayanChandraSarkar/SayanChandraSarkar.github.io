@@ -1,0 +1,104 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color:#ff7300;
+}
+
+.mask
+{
+    background:rgb(8, 8, 8);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+}
+
+footer
+{
+    background: #ede3df;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+
+.icons img
+{
+    width:8em;
+    padding: 12px 0 0 20px;
+}
+.flex
+{
+    display: flex;
+    background: #fff;
+    width:80%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.1);
+}
+.code
+{
+   font-size: 1.1em; 
+   color:#333;
+}
+.num input
+{
+    border: none;
+    font-size: 1.1em;
+    margin-left: 4px;
+    letter-spacing: 1px;
+}
+*:focus
+{
+    outline: none;
+}
+
+::placeholder
+{
+    color:#bdbdbd;
+}
+
+.number
+{
+    color: #333;
+}
+
+.aggrement
+
+{
+    font-size: 0.8em;
+    padding: 15px 15px 15px 16px
+}
+.aggrement div
+{
+    color: #999593;
+}
+.aggrement a
+{
+    text-decoration: none;
+    color:#ff5500;
+}
+.button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.button button
+{
+    padding: 15px 50px;
+    border: none;
+    width: 100%;
+    background:#ff5500;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 10px;
+}

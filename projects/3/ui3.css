@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+     background-color:#ff7300;
+}
+
+.mask
+{
+    background:rgb(8, 8, 8);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+}
+
+footer
+{
+    background:#d1cfcf;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 12px 12px 0 0;
+}
+.icons img
+{
+    width:8em;
+    padding: 12px 0 0 20px;
+}
+.first
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+}
+
+
+.first .entr
+{
+    font-size: 0.8em;
+    color: #888;
+    font-weight: 600;
+}
+.circle
+{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+
+}
+svg
+{
+    transform:rotate(265deg);
+    width:100%;       
+}
+
+.path
+{
+    stroke-dashoffset: 0;
+    animation: progress 30s linear;
+}
+
+@keyframes progress{
+    0%{stroke-dasharray: 0,200;}
+    100%{stroke-dasharray:82,200;}
+}
+
+.num
+{
+    font-size: 0.5em;
+    color: #888;
+    position: absolute;
+}
+.ix-edit
+{
+    margin-left: 10px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.second
+{
+    display: flex;
+    justify-content: center;
+}
+input
+{
+    margin:5px;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: arino;
+    font-size: 1.1em;
+    background: #eef2f3;
+}
+
+.third
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 20px 0;
+}
+.third button
+{
+    padding: 15px;
+    width:90%;
+    border-radius: 10px;
+    border: none;
+    background:#ff5500;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}

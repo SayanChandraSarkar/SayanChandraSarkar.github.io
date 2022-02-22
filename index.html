@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/sayan.css" />
+    <link rel="stylesheet" href="assets/xo.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ff62abb8e9.js"></script>
+    <script src="assets/odometerx.min.js"></script>
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="sayans.jpg" />
+  </head>
+  <body>
+    <!-- <div
+      id="loading"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        background-color: red;
+        height: 100%;
+        width: 100%;
+      "
+    ></div> -->
+    <style>
+      .fill {
+        fill: #fff;
+      }
+    </style>
+
+    <header is-open="0">
+      <div class="logo">sayan sarkar</div>
+      <div class="menu">
+        <input type="checkbox" class="menu-btn" id="menu-btn" onchange="toggleMenu()" />
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
+        <div class="bg ripple light"></div>
+        <ul class="child-menu" onclick="closeMenu()">
+          <li class="ripple home"><a href="#contact-us">Home</a></li>
+          <li class="ripple about"><a href="#">About</a></li>
+          <li class="ripple blog"><a href="#">Blog</a></li>
+          <li class="ripple contact"><a href="#">Contact</a></li>
+        </ul>
+
+        <label class="toogle">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+    <div class="background-image">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path class="fill" d="M0,192L720,288L1440,160L1440,320L720,320L0,320Z" style="user-select: auto"></path>
+      </svg>
+      <div class="welcome">Welcome to My Portfolio</div>
+      <div class="container">
+        <h1>
+          Hi,Iam Sayan Sarkar a:
+          <span class="txt-type" data-wait="3000" data-words='["Developer","Designer","UI/UX","Gamer"]'></span>
+        </h1>
+      </div>
+
+      <div class="icons">
+        <div class="icon">
+          <a href="https://www.facebook.com/sayan.sarkar.9634340" target="_blank">
+            <img src="icons/facebook.png" />
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.instagram.com/_ig.sledge_/" target="_blank">
+            <img src="icons/instagram.png" />
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://twitter.com/ssayansarker" target="_blank">
+            <img src="icons/twitter.png" />
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://wa.me/qr/4KVEIUNBRTDYM1" target="_blank">
+            <img src="icons/whatsapp.png" />
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/sayan-sarkar-5275b5205/" target="_blank">
+            <img src="icons/linkedin.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Expertise">
+      <div class="exprtise">Expertise</div>
+      <div class="holder">
+        <div class="double">
+          <div class="loader" data-percent="90"></div>
+          <div class="text">HTML&CSS</div>
+        </div>
+
+        <div class="double">
+          <div class="loader" data-percent="50"></div>
+          <div class="text">JavaScript</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="40"></div>
+          <div class="text">Php</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="10"></div>
+          <div class="text">ReactJs</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="80"></div>
+          <div class="text">MySql</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="40"></div>
+          <div class="text">Jquery</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="40"></div>
+          <div class="text">Illustrator</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="50"></div>
+          <div class="text">Photoshop</div>
+        </div>
+        <div class="double">
+          <div class="loader" data-percent="20"></div>
+          <div class="text">Figma</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about1">
+      <div class="about_me">About Me</div>
+      <div class="qsn_ans">
+        <div class="box1 xo leftright aaa">
+          <div class="question">What is My name?</div>
+          <div class="Answer">My name is Sayan Chandra Sarkar</div>
+        </div>
+        <div class="box2 xo rightleft aaa">
+          <div class="question">Where are I from?</div>
+          <div class="Answer">I am from a beautiful state Assam</div>
+        </div>
+        <div class="box3 xo leftright aaa">
+          <div class="question">What is My Qualification?</div>
+          <div class="Answer">
+            I did My HSLC from Little Flower English High School, and later did my Higher secondary from Abhayeswari Hs & Mp school. Now I am studying BCA CTIS at Assam Downtown University.
+          </div>
+        </div>
+        <div class="box4 xo rightleft aaa">
+          <div class="question">Any Curricular activites?</div>
+          <div class="Answer">
+            Yea I am active in various fields like Cricket, Football, Badminton, Kabbadi etc. And i get various certificate in this fields. I also play games like BGMI, and played various Tiers and
+            then I have to leave that start my journey in coding.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-1">
+      <div class="project_name">My Projects</div>
+      <div class="projects">
+        <div class="project xo xos01 mt_mb">
+          <a href="projects/5/ui5.html" target="_blank">
+            <img src="projects/1/project1.png" />
+          </a>
+          <p>Only for mobile</p>
+        </div>
+
+        <div class="project xo xos01 mt_mb">
+          <a href="projects/2/ui2.html" target="_blank">
+            <img src="projects/2/project2.png" />
+          </a>
+          <p>Only for mobile</p>
+        </div>
+
+        <div class="project xo xos01 mt_mb">
+          <a href="projects/3/ui3.html" target="_blank">
+            <img src="projects/3/project3.jpg" />
+          </a>
+          <p>Only for mobile</p>
+        </div>
+        <div class="project xo xos01 mt_mb">
+          <a href="projects/4/ui4.html" target="_blank">
+            <img src="projects/4/project4.jfif" />
+          </a>
+          <p>Only for mobile</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact_us" id="contact-us">
+      <div class="head_contact xo leftright">Feel free to Contact</div>
+      <div class="do">
+        <div class="info">
+          <form action="" class="inside">
+            <div class="information xo leftright">
+              <div class="info1">
+                <h2>Contact Information</h2>
+                <p>
+                  Hey, Don't hesitate to send any queries you have, just send it!! If there is anything i can do like Web Developing, Web designing just freely contact me. My contact details are give
+                  below
+                </p>
+              </div>
+
+              <div class="info2">
+                <input type="text" id="copy1" />
+                <div class="info2_inside" sl="1">
+                  <i class="fa-solid fa-phone"></i>
+                  <div class="copy" onclick="copyText(1,this.innerText)">
+                    +918011658412
+                    <div class="alertBox arrow_left"></div>
+                  </div>
+                </div>
+                <div class="info2_inside" sl="2">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="copy" onclick="copyText(2,this.innerText)">
+                    sledgecoder@gmail.com
+                    <div class="alertBox arrow_left"></div>
+                  </div>
+                </div>
+                <div class="info2_inside" sl="3">
+                  <i class="fa-brands fa-github-square"></i>
+                  <div class="copy" onclick="copyText(3,this.innerText)">
+                    github.com/SayanChandraSarkar
+                    <div class="alertBox arrow_left"></div>
+                  </div>
+                </div>
+                <div class="info2_inside" sl="4">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="copy" onclick="copyText(4,this.innerText)">
+                    Bongaigaon, Abhayapuri, Basantipara Ward No.6
+                    <div class="alertBox arrow_left"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form-1 xo rightleft">
+          <form action="" class="form">
+            <div class="form_div">
+              <input type="text" class="form_input" placeholder=" " required />
+              <label for="" class="form_label">Name</label>
+            </div>
+            <div class="form_div">
+              <input type="number" class="form_input" placeholder=" " required />
+              <label for="" class="form_label">Phone No.</label>
+            </div>
+            <div class="form_div">
+              <input type="email" class="form_input" placeholder=" " required />
+              <label for="" class="form_label">Email</label>
+            </div>
+            <div class="form_div msg">
+              <textarea name="message" class="form_input" cols="50" rows="8" placeholder=" "></textarea>
+              <label for="" class="form_label">Message</label>
+            </div>
+
+            <input type="submit" class="form_button" value="Send" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <div class="foot_first">
+          <div>Disclaimer</div>
+          <div>Privacy Policy</div>
+          <div>Terms & Condition</div>
+        </div>
+        <div class="foot_second">
+          <div class="copyright">
+            <span>&copy</span>
+            <p>Copyright 2022, claim by</p>
+            <div>Sayan Sarkar</div>
+          </div>
+          <div class="love">
+            <span>Made with <i class="fa fa-heart pulse"></i> in <a href="https://goo.gl/maps/iad5JZNKmVESLFFdA" target="_blank">Abhayapuri</a></span>
+          </div>
+        </div>
+
+        <div class="social_contacts">
+          <div class="telephone">
+            <a href="tel:+918011658412" target="_blank">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="Email">
+            <a href="mailto:sledgecoder@gmail.com?" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+          <div class="Heart">
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+          <div class="GitHub">
+            <a href="https://github.com/SayanChandraSarkar" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- wow animation -->
+    <script src="assets/xo.js"></script>
+    <!-- <script>
+      new WOW().init();
+    </script> -->
+    <!-- wow animation -->
+
+    <script>
+      // $(function () {
+      //   $("#loading").remove();
+      // });
+
+      /*---------------------ripple effect------------------*/
+      $(document).on("click", ".ripple", function (t) {
+        $(this).css("cssText", "--s: 0; --o: 1;"),
+          $(this).offset().top,
+          $(this).css(
+            "cssText",
+            "--t: 1; --o: 0; --d: " + 2.5 * Math.max($(this).outerWidth(), $(this).outerHeight()) + "; --x:" + (t.pageX - $(this).offset().left) + "; --y:" + (t.pageY - $(this).offset().top) + ";"
+          );
+      });
+
+      $(function () {
+        $(window).on("scroll", function () {
+          if ($(window).scrollTop() > 50) {
+            $("header").addClass("active");
+          } else {
+            $("header").removeClass("active");
+          }
+        });
+      });
+      let header = false;
+      function toggleMenu() {
+        $("header").attr("is-open", this.event.target.checked ? "1" : "0");
+      }
+
+      function closeMenu() {
+        $("header").attr("is-open", "0");
+        $("#menu-btn").prop("checked", false);
+      }
+
+      // Type Writter effect
+
+      class TypeWriter {
+        constructor(txtElement, words, wait = 3000) {
+          this.txtElement = txtElement;
+          this.words = words;
+          this.txt = "";
+          this.wordIndex = 0;
+          this.wait = parseInt(wait, 10);
+          this.type();
+          this.isDeleting = false;
+        }
+
+        type() {
+          // Current index of word
+          const current = this.wordIndex % this.words.length;
+          // Get full text of current word
+          const fullTxt = this.words[current];
+
+          // Check if deleting
+          if (this.isDeleting) {
+            // Remove char
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+            // Add char
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+
+          // Insert txt into element
+          this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+          // Initial Type Speed
+          let typeSpeed = 100;
+
+          if (this.isDeleting) {
+            typeSpeed /= 2;
+          }
+
+          // If word is complete
+          if (!this.isDeleting && this.txt === fullTxt) {
+            // Make pause at end
+            typeSpeed = this.wait;
+            // Set delete to true
+            this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === "") {
+            this.isDeleting = false;
+            // Move to next word
+            this.wordIndex++;
+            // Pause before start typing
+            typeSpeed = 500;
+          }
+
+          setTimeout(() => this.type(), typeSpeed);
+        }
+      }
+
+      // Init On DOM Load
+      document.addEventListener("DOMContentLoaded", init);
+
+      // Init App
+      function init() {
+        const txtElement = document.querySelector(".txt-type");
+        const words = JSON.parse(txtElement.getAttribute("data-words"));
+        const wait = txtElement.getAttribute("data-wait");
+        // Init TypeWriter
+        new TypeWriter(txtElement, words, wait);
+      }
+
+      let odo;
+
+      $(function () {
+        odo = new OdomterX();
+        circular();
+      });
+
+      function circular() {
+        $(".loader").html(`<div class="circular">
+              <svg viewBox="25 25 50 50">
+                <circle class="path-bg" stroke-width="6px" stroke="#ddd" fill="none" r="20" cx="50" cy="50"></circle>
+
+                <circle class="path" stroke-dasharray="0,124" stroke-width="5px" stroke="#08f" fill="none" r="20" cx="50" cy="50"></circle>
+              </svg>
+            <div class="percent"></div>
+            </div>`);
+
+        const path = document.getElementsByClassName("path");
+
+        var totalLegth = path[0].getTotalLength();
+
+        console.log(path);
+        console.log("totalLegth", totalLegth);
+
+        let i = 0;
+
+        $(".loader").each(function () {
+          let assigned_percent = $(this).attr("data-percent");
+          let value = `${(totalLegth / 100) * assigned_percent},125`;
+          $(this).find(".path").css("stroke-dasharray", value);
+          $(this).find(".percent").attr("serial", i).addClass("odo");
+
+          odo.update(`.percent[serial='${i}']`, assigned_percent);
+
+          i++;
+        });
+      }
+
+      var alertBox = document.querySelector(".alertBox");
+
+      function copyText(sl, e) {
+        console.log(e);
+
+        var copyPasteText = document.getElementById("copy1");
+        copyPasteText.value = e;
+        copyPasteText.select();
+        copyPasteText.setSelectionRange(0, 9999);
+        document.execCommand("copy");
+        $(`.info2_inside[sl='${sl}'] .alertBox`).addClass("active");
+
+        setTimeout(() => $(`.info2_inside[sl='${sl}'] .alertBox`).removeClass("active"), 2000);
+      }
+
+      // let toogle = document.querySelector(".toogle");
+      // let body = document.getElementsByTagName("body")[0];
+
+      $(document).on("change", ".toogle", () => {
+        $("body").toggleClass("active");
+        $(".slider").toggleClass("active");
+        // body.classList.toggle("active");
+        // toogle.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

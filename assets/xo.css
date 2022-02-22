@@ -1,0 +1,13 @@
+
+.xotop{transform:translateY(140px);opacity:0;}
+.xos01{transform:scale(0);transition-delay:0.2s;}
+.leftright{transform:translateX(-100px);opacity:0;transition-delay:0.2s;}
+.rightleft{transform:translateX(100px);opacity:0;transition-delay:0.2s;}
+
+.visible .xotop,.visible.xotop{transition:0.4s;transform:translateY(0);opacity:1;}
+.visible .xos01,.visible.xos01{transition:0.4s;transform:scale(1);}
+.visible .leftright,.visible.leftright{transition:0.4s;transform:translateX(0);opacity:1;}
+.visible .leftright,.visible.rightleft{transition:0.4s;transform:translateX(0);opacity:1;}
+
+ git config --global user.email "sledgecoder@gmail.com"
+  git config --global user.name "SayanChandraSarkar"

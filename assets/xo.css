@@ -9,5 +9,5 @@
 .visible .leftright,.visible.leftright{transition:0.4s;transform:translateX(0);opacity:1;}
 .visible .leftright,.visible.rightleft{transition:0.4s;transform:translateX(0);opacity:1;}
 
- git config --global user.email "sledgecoder@gmail.com"
-  git config --global user.name "SayanChandraSarkar"
+ /* git config --global user.email "sledgecoder@gmail.com"
+  git config --global user.name "SayanChandraSarkar" */

@@ -188,7 +188,7 @@ html {
     width: 100%;
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 35%;
     font-size: 0.6em;
     padding: 10px;
     font-size: 1.6rem;
@@ -202,7 +202,7 @@ html {
     width: 100%;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 46%;
     font-size: 0.6em;
     padding: 20px;
     font-family: "Poppins", sans-serif;
@@ -283,8 +283,8 @@ html {
   }
   .circular > svg {
     transform: rotate(265deg);
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     transform-origin: center center;
     stroke-linecap: round;
   }
@@ -302,7 +302,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.6rem;
+    font-size: 20px;
   }
   .percent::after {
     content: "%";
@@ -311,7 +311,7 @@ html {
     display: flex;
     justify-content: center;
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .icons {
     width: 100%;
@@ -391,7 +391,7 @@ html {
     padding: 20px;
   }
   .project > p {
-    width: 50%;
+    width: 55%;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -408,7 +408,6 @@ html {
   }
   .mt_mb {
     margin-top: 20px;
-    margin-bottom: 30px;
   }
   .contact_us {
     padding: 10px;
@@ -429,7 +428,7 @@ html {
     margin-top: 25px;
   }
   .form {
-    width: 360px;
+    width: 350px;
     padding: 4rem 2rem;
     border-radius: 1rem;
     background-image: linear-gradient(to left, #06214e, #031c45, #01173d, #011134, #00082c);
@@ -505,7 +504,7 @@ html {
   .foot_first {
     display: flex;
     justify-content: space-around;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #ddd;
     font-weight: 500;
   }
@@ -889,8 +888,8 @@ html {
   }
   .circular > svg {
     transform: rotate(265deg);
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
     transform-origin: center center;
     stroke-linecap: round;
   }

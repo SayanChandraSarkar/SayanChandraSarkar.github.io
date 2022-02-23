@@ -15,6 +15,7 @@ html {
   overflow-x: hidden;
   max-width: 100%;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 * :focus {
   outline: none;
